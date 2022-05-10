@@ -40,5 +40,6 @@ module.exports = {
         unnamedComponents: "arrow-function",
       },
     ],
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
   },
 };

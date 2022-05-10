@@ -1,8 +1,10 @@
 /* eslint-disable consistent-return */
 /* eslint-disable no-unused-expressions */
 import { useState, useEffect } from "react";
+import { Button, Flex, useColorModeValue, Text } from "@chakra-ui/react";
 import "./App.css";
 import NumberFormat from "react-number-format";
+import ColorModeSwitcher from "./navbar/ColorModeSwitcher";
 
 const App = () => {
   const [prevState, setPrevState] = useState("");
@@ -94,77 +96,99 @@ const App = () => {
     setInput("0");
   };
 
+  const bg = useColorModeValue("white", "#191C22");
+  const btbg = useColorModeValue("#FAFAFA", "#262931");
+
   return (
     <div className="container">
       <div className="wrapper">
-        <div className="screen">
-          {input !== "" || input === "0" ? (
-            <NumberFormat value={input} displayType="text" thousandSeparator />
-          ) : (
-            <NumberFormat
-              value={prevState}
-              displayType="text"
-              thousandSeparator
-            />
-          )}
-        </div>
-        <button type="button" className="btn light-gray" onClick={reset}>
+        <Flex bg={bg} className="screen">
+          <ColorModeSwitcher />
+          <Text
+            display="flex"
+            w="100%"
+            height="148px"
+            alignItems="end"
+            justifyContent="flex-end"
+          >
+            {input !== "" || input === "0" ? (
+              <NumberFormat
+                value={input}
+                displayType="text"
+                thousandSeparator
+              />
+            ) : (
+              <NumberFormat
+                value={prevState}
+                displayType="text"
+                thousandSeparator
+              />
+            )}
+          </Text>
+        </Flex>
+        <Button
+          type="button"
+          h="100%"
+          color="#265B63"
+          bg={btbg}
+          onClick={reset}
+        >
           AC
-        </button>
-        <button type="button" className="btn light-gray" onClick={percent}>
+        </Button>
+        <Button type="button" color="#265B63" bg={btbg} onClick={percent}>
           %
-        </button>
-        <button type="button" className="btn light-gray" onClick={minusPlus}>
+        </Button>
+        <Button type="button" color="#265B63" bg={btbg} onClick={minusPlus}>
           +/-
-        </button>
-        <button type="button" className="btn orange" onClick={operatorType}>
+        </Button>
+        <Button type="button" color="#DF7575" bg={btbg} onClick={operatorType}>
           /
-        </button>
-        <button type="button" className="btn" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={inputNumb}>
           7
-        </button>
-        <button type="button" className="btn" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={inputNumb}>
           8
-        </button>
-        <button type="button" className="btn" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={inputNumb}>
           9
-        </button>
-        <button type="button" className="btn orange" onClick={operatorType}>
+        </Button>
+        <Button type="button" color="#DF7575" bg={btbg} onClick={operatorType}>
           X
-        </button>
-        <button type="button" className="btn" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={inputNumb}>
           4
-        </button>
-        <button type="button" className="btn" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={inputNumb}>
           5
-        </button>
-        <button type="button" className="btn" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={inputNumb}>
           6
-        </button>
-        <button type="button" className="btn orange" onClick={operatorType}>
+        </Button>
+        <Button type="button" color="#DF7575" bg={btbg} onClick={operatorType}>
           +
-        </button>
-        <button type="button" className="btn" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={inputNumb}>
           1
-        </button>
-        <button type="button" className="btn" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={inputNumb}>
           2
-        </button>
-        <button type="button" className="btn" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={inputNumb}>
           3
-        </button>
-        <button type="button" className="btn orange" onClick={operatorType}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={operatorType}>
           -
-        </button>
-        <button type="button" className="btn zero" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} className="zero" onClick={inputNumb}>
           0
-        </button>
-        <button type="button" className="btn" onClick={inputNumb}>
+        </Button>
+        <Button type="button" bg={btbg} onClick={inputNumb}>
           .
-        </button>
-        <button type="button" className="btn" onClick={equals}>
+        </Button>
+        <Button type="button" color="#DF7575" bg={btbg} onClick={equals}>
           =
-        </button>
+        </Button>
       </div>
     </div>
   );

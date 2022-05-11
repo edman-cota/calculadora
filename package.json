@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint src/**.jsx",
+    "lint": "eslint src/**/*.js src/**/*.jsx",
     "preview": "vite preview",
-    "pre-commit": "yarn run lint"
+    "pre-commit": "yarn run lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.8.8",
+    "@chakra-ui/theme-tools": "^1.3.6",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "framer-motion": "^6.3.3",

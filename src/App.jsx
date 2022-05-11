@@ -1,4 +1,5 @@
 /* eslint-disable consistent-return */
+/* eslint-disable object-curly-newline */
 /* eslint-disable no-unused-expressions */
 import { useState, useEffect } from "react";
 import { Button, Flex, useColorModeValue, Text } from "@chakra-ui/react";

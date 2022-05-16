@@ -33,9 +33,10 @@ Correr eslint
 - React
 - [Chakra UI][ChakraUI] es una biblioteca de componentes simple, modular y accesible
 - [Vite][vite] una herramienta de compilación que tiene como objetivo proporcionar una experiencia de desarrollo más rápida y ágil para proyectos web modernos
-- Husky
+- [Husky][husky] improves your commits and more
 - Jest
 - eslint
 
 [ChakraUI]: https://chakra-ui.com/
 [vite]: https://vitejs.dev/
+[husky]: https://typicode.github.io/husky/#/

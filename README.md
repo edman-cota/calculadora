@@ -35,13 +35,14 @@ Correr las pruebas
 ```
 
 ## Tecnologías usadas
-- React
+- [React][react] Javascript library designed to create user interfaces
 - [Chakra UI][ChakraUI] es una biblioteca de componentes simple, modular y accesible
 - [Vite][vite] a build tool that aims to provide a faster and leaner development experience for modern web projects
 - [Husky][husky] improves your commits and more
 - Jest
 - eslint
 
+[react]: https://es.reactjs.org/
 [ChakraUI]: https://chakra-ui.com/
 [vite]: https://vitejs.dev/
 [husky]: https://typicode.github.io/husky/#/

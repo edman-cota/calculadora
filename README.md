@@ -11,5 +11,8 @@ Calculadora simple para ecuaciones simples
 
 ## Instalación y uso
 ```bash
-  yarn 
+  git clone https://github.com/edman-cota/calculadora.git
+```
+```bash
+  cd calculadora
 ```

@@ -12,7 +12,15 @@ Calculadora simple para ecuaciones simples
 ## Instalación y uso
 ```bash
   git clone https://github.com/edman-cota/calculadora.git
-```
-```bash
+  
+  # Mover a la carpeta del repositorio local
   cd calculadora
+  
+  # Instalar todos los paquetes para uso local
+  yarn
+```
+
+Correr eslint
+```bash
+  yarn lint
 ```

@@ -29,6 +29,11 @@ Correr eslint
   yarn lint
 ```
 
+Correr las pruebas
+```bash
+  yarn test
+```
+
 ## Tecnologías usadas
 - React
 - [Chakra UI][ChakraUI] es una biblioteca de componentes simple, modular y accesible

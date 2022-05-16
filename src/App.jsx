@@ -7,6 +7,9 @@ import "./App.css";
 import NumberFormat from "react-number-format";
 import ColorModeSwitcher from "./navbar/ColorModeSwitcher";
 import { sum } from "./utils/sum";
+import { substraction } from "./utils/substraction";
+import { multiply } from "./utils/multiply";
+import { division } from "./utils/division";
 
 const App = () => {
   const [prevState, setPrevState] = useState("");
@@ -47,16 +50,16 @@ const App = () => {
     let cal;
     switch (operator) {
       case "/":
-        cal = String(parseFloat(prevState) / parseFloat(currentState));
+        cal = division(parseFloat(prevState), parseFloat(currentState));
         break;
       case "+":
         cal = sum(parseFloat(prevState), parseFloat(currentState));
         break;
       case "X":
-        cal = String(parseFloat(prevState) * parseFloat(currentState));
+        cal = multiply(parseFloat(prevState), parseFloat(currentState));
         break;
       case "-":
-        cal = String(parseFloat(prevState) - parseFloat(currentState));
+        cal = substraction(parseFloat(prevState), parseFloat(currentState));
         break;
       default:
         return cal;
@@ -179,7 +182,7 @@ const App = () => {
         <Button type="button" bg={btbg} onClick={inputNumb}>
           3
         </Button>
-        <Button type="button" bg={btbg} onClick={operatorType}>
+        <Button type="button" color="#DF7575" bg={btbg} onClick={operatorType}>
           -
         </Button>
         <Button type="button" bg={btbg} className="zero" onClick={inputNumb}>

@@ -31,7 +31,7 @@ Correr eslint
 
 ## Tecnologías usadas
 - React
-- [Chakra UI][ChakraUI]
+- [Chakra UI][ChakraUI] es una biblioteca de componentes simple, modular y accesible
 - Vite
 - Husky
 - Jest

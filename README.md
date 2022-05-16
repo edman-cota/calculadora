@@ -31,8 +31,10 @@ Correr eslint
 
 ## Tecnologías usadas
 - React
-- Chakra UI
+- [Chakra UI][ChakraUI]
 - Vite
 - Husky
 - Jest
 - eslint
+
+[ChakraUI]: https://chakra-ui.com/

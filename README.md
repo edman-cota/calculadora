@@ -28,3 +28,11 @@ Correr eslint
 ```bash
   yarn lint
 ```
+
+## Tecnologías usadas
+- React
+- Chakra UI
+- Vite
+- Husky
+- Jest
+- eslint

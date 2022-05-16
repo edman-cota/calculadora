@@ -32,9 +32,10 @@ Correr eslint
 ## Tecnologías usadas
 - React
 - [Chakra UI][ChakraUI] es una biblioteca de componentes simple, modular y accesible
-- Vite una herramienta de compilación que tiene como objetivo proporcionar una experiencia de desarrollo más rápida y ágil para proyectos web modernos
+- [Vite][vite] una herramienta de compilación que tiene como objetivo proporcionar una experiencia de desarrollo más rápida y ágil para proyectos web modernos
 - Husky
 - Jest
 - eslint
 
 [ChakraUI]: https://chakra-ui.com/
+[vite]: https://vitejs.dev/

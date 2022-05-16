@@ -11,6 +11,7 @@ Calculadora simple para ecuaciones simples
 
 ## Instalación y uso
 ```bash
+  # Clonar el repositorio
   git clone https://github.com/edman-cota/calculadora.git
   
   # Mover a la carpeta del repositorio local
@@ -18,6 +19,9 @@ Calculadora simple para ecuaciones simples
   
   # Instalar todos los paquetes para uso local
   yarn
+  
+  # Correr el servidor localmente
+  yarn dev
 ```
 
 Correr eslint

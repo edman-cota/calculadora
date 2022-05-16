@@ -6,6 +6,7 @@ import { Button, Flex, useColorModeValue, Text } from "@chakra-ui/react";
 import "./App.css";
 import NumberFormat from "react-number-format";
 import ColorModeSwitcher from "./navbar/ColorModeSwitcher";
+import { sum } from "./utils/sum";
 
 const App = () => {
   const [prevState, setPrevState] = useState("");
@@ -49,7 +50,7 @@ const App = () => {
         cal = String(parseFloat(prevState) / parseFloat(currentState));
         break;
       case "+":
-        cal = String(parseFloat(prevState) + parseFloat(currentState));
+        cal = sum(parseFloat(prevState), parseFloat(currentState));
         break;
       case "X":
         cal = String(parseFloat(prevState) * parseFloat(currentState));
